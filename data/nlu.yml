@@ -1,0 +1,73 @@
+version: "3.1"
+# tu khoa de bot tra loi
+nlu:
+  - intent: chua_ro
+    examples: |
+      - tôi không hiểu
+      - bạn nói lại được không?
+      - làm ơn giải thích thêm
+      - tôi không biết
+      - dhkjs
+      - wurwu
+      - kdkeq
+      - wqiuqiw
+      - a;lsa;ls
+      - w99u9wd
+      - sl;a;la
+      - cjskcj
+
+  - intent: spam
+    examples: |
+      - er09r320rvn
+      -  roiuervn;rwvlm
+      - iojwevepnrov
+      - wovjr932nvnvltj
+      - vowievonl
+      - eviwnvtpetn
+      - v9u3rn3pe
+      - velkjin 
+      - knvw
+      - kjkehvwtv
+      - vewojevr
+      - rvwvv
+  - intent: thank
+    examples: |
+      - cảm ơn
+      - hihihi
+      - thank you
+      - thanks
+      - tôi đi đường giữa
+
+  - intent: chon_nha
+    examples: |
+      - tôi muốn tìm [nhà](bds)
+      - tìm thong tin [nhà](bds)
+      - nhà
+      - cửa hàng
+
+  - intent: chon_bds
+    examples: |
+      - tôi muốn tìm bds
+      - tìm thong tin bds
+      - tôi muốn xem bds
+
+  - intent: tt_bds
+    examples: |
+      - [nhà](bds)
+      - [căn hộ](bds)
+      - [cửa hàng](bds)
+      - [đất](bds)
+
+  - intent: greet
+    examples: |
+      - xin chào
+      - hi
+      - chào
+      - hả
+  - intent: goodbye
+    examples: |
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - tạm biệt

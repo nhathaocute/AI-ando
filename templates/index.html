@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../static/img/loc.jpg" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='ai.css') }}" />
+    <title>Chatbot BDS</title>
+    <style>
+      /* Styles for demonstration purpose, you can customize these as needed */
+      .emoji-box {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      .emoji-box span {
+        cursor: pointer;
+        margin-right: 5px;
+      }
+
+      .emoji-box span:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chat-box">
+      <div class="header">
+        <div class="avatar-wrapper avatar-big">
+          <img src="{{ url_for('static', filename='img/loc.jpg') }}" alt="" />
+        </div>
+        <span class="name">ChatBot</span>
+        <span class="options">
+          <i class="fas fa-ellipsis-h"></i>
+        </span>
+      </div>
+      <div class="chat-room" id="chat-widget-messages"></div>
+      <div class="type-area">
+        <div class="input-wrapper">
+          <input
+            class="inputText"
+            type="text"
+            id="inputText"
+            placeholder="Type messages here..."
+          />
+        </div>
+        <span class="button-add" id="buttonAdd">
+          <i class="fas fa-plus-circle"></i>
+          <div class="others" id="others">
+            <span class="emoji-button">
+              <i class="far fa-laugh"></i>
+              <div class="emoji-box">
+                <span onclick="selectEmoji('&#x1f604;')">&#x1f604;</span>
+                <span onclick="selectEmoji('😀')">😀</span>
+                <span onclick="selectEmoji('😂')">😂</span>
+                <span onclick="selectEmoji('😭')">😭</span>
+                <span onclick="selectEmoji('😍')">😍</span>
+                <span onclick="selectEmoji('🤮')">🤮</span>
+                <span onclick="selectEmoji('🤑')">🤑</span>
+                <span onclick="selectEmoji('😖')">😖</span>
+                <span onclick="selectEmoji('😷')">😷</span>
+              </div>
+            </span>
+            <span class="image-button">
+              <i class="far fa-image"></i>
+            </span>
+            <span>
+              <i class="fas fa-paperclip"></i>
+            </span>
+          </div>
+        </span>
+        <button class="button-send">Send</button>
+      </div>
+    </div>
+    <script>
+      function selectEmoji(emoji) {
+        var inputText = document.getElementById("inputText");
+        inputText.value += emoji;
+      }
+
+      document.addEventListener("click", function (event) {
+        var targetElement = event.target;
+        var buttonAdd = document.getElementById("buttonAdd");
+        var emojiBox = document.querySelector(".emoji-box");
+        var others = document.querySelector(".others");
+
+        // Kiểm tra nếu phần tử đã được nhấp không phải là phần của button-add
+        if (!buttonAdd.contains(targetElement)) {
+          if (
+            emojiBox.classList.contains("visible") ||
+            others.classList.contains("visible")
+          ) {
+            emojiBox.classList.remove("visible"); // Ẩn hộp emoji
+            others.classList.remove("visible"); // Ẩn phần tử 'others'
+          }
+        }
+      });
+
+      // Hiển thị hộp emoji và phần tử 'others' khi nhấp vào nút button-add
+      document
+        .querySelector(".button-add")
+        .addEventListener("click", function (event) {
+          var emojiBox = document.querySelector(".emoji-box");
+          var others = document.querySelector(".others");
+          emojiBox.classList.add("visible"); // Hiển thị hộp emoji
+          others.classList.add("visible"); // Hiển thị phần tử 'others'
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='ai.js') }}"></script>
+    <script></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>

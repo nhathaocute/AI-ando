@@ -1,0 +1,11 @@
+version: "3.1"
+
+rules:
+  - rule: Activate fallback when intent is unclear
+    steps:
+      - intent: chua_ro
+      - action: utter_default_fallback
+  - rule: spam
+    steps:
+      - intent: spam
+      - action: utter_default_spam

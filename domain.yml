@@ -1,0 +1,43 @@
+intents:
+  - chua_ro
+  - spam
+  - greet
+  - goodbye
+  - thank
+  - chon_nha
+  - chon_bds
+  - tt_bds
+
+entities:
+  - bds
+
+actions:
+  - utter_default_fallback
+  - action_extract_nha_entity
+  - action_chon_bds
+  - action_xacnhan_bds
+
+responses:
+  utter_thank:
+    - text: "cảm ơn bạn đã chọn đúng vị trí"
+    - text: "chỉ cần bạn có mặt thắng thua không quan trọng"
+
+  utter_default_fallback:
+    - text: "Xin lỗi, tôi không hiểu câu hỏi của bạn. Bạn có thể nói lại một cách rõ ràng hơn không?"
+
+  utter_default_spam:
+    - text: "tôi không hiểu câu hỏi của bạn. Bạn có thể nói lại một cách rõ ràng hơn không?"
+
+  utter_bds:
+    - text: "hãy cho tôi biết bạn muốn chọn loại bất động sản nào?"
+
+  utter_greet:
+    - text: "Hey! How are you?"
+    - text: <p>hihi <img src='static/img/loc.jpg' alt='' /></p>
+
+  utter_goodbye:
+    - text: "Bye"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
