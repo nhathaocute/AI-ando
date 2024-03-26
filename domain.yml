@@ -1,21 +1,25 @@
 intents:
   - chua_ro
   - spam
-  - greet
-  - goodbye
+  - chao
+  - tam_biet
   - thank
   - chon_nha
   - chon_bds
   - tt_bds
+  - dat
 
 entities:
   - bds
+  - dat_e
+  - price
 
 actions:
   - utter_default_fallback
   - action_extract_nha_entity
   - action_chon_bds
   - action_xacnhan_bds
+  - action_xacnhan_dat
 
 responses:
   utter_thank:
@@ -31,12 +35,29 @@ responses:
   utter_bds:
     - text: "hãy cho tôi biết bạn muốn chọn loại bất động sản nào?"
 
-  utter_greet:
+  utter_chao:
     - text: "Hey! How are you?"
     - text: <p>hihi <img src='static/img/loc.jpg' alt='' /></p>
 
-  utter_goodbye:
+  utter_tambiet:
     - text: "Bye"
+
+slots:
+  bds:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: bds
+  dat_e:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: dat_e
+  price:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: price
 
 session_config:
   session_expiration_time: 60

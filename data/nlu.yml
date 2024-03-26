@@ -47,27 +47,31 @@ nlu:
 
   - intent: chon_bds
     examples: |
-      - tôi muốn tìm bds
-      - tìm thong tin bds
-      - tôi muốn xem bds
+      - tôi muốn tìm bất động sản
+      - tìm thong tin bất động sản
+      - tôi muốn xem bất động sản
 
   - intent: tt_bds
     examples: |
-      - [nhà](bds)
+      - [nhà ở](bds)
       - [căn hộ](bds)
       - [cửa hàng](bds)
       - [đất](bds)
 
-  - intent: greet
+  - intent: dat
+    examples: |
+      - [thot not](dat_e) và [500](price)
+      - Tôi muốn tìm bất động sản ở [ninh kieu](dat_e) giá dưới [500](price)
+      - Tìm kiếm nhà ở [cai rang](dat_e) với giá không quá [600](price)
+      - Tôi cần tìm căn hộ ở [o mon](dat_e) giá không vượt quá [500](price)
+
+  - intent: chao
     examples: |
       - xin chào
       - hi
       - chào
-      - hả
-  - intent: goodbye
+  - intent: tam_biet
     examples: |
-      - good by
-      - cee you later
-      - good night
+      - good bye
       - bye
       - tạm biệt

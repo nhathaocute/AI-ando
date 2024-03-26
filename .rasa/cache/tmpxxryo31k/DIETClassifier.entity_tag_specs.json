@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-bds",
+      "2": "I-bds",
+      "3": "L-bds",
+      "4": "U-bds",
+      "5": "B-price",
+      "6": "I-price",
+      "7": "L-price",
+      "8": "U-price",
+      "9": "B-quan",
+      "10": "I-quan",
+      "11": "L-quan",
+      "12": "U-quan",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-bds": 1,
+      "I-bds": 2,
+      "L-bds": 3,
+      "U-bds": 4,
+      "B-price": 5,
+      "I-price": 6,
+      "L-price": 7,
+      "U-price": 8,
+      "B-quan": 9,
+      "I-quan": 10,
+      "L-quan": 11,
+      "U-quan": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

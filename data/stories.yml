@@ -1,21 +1,26 @@
 version: "3.1"
 
 stories:
-  - story: happy path
-    steps:
-      - intent: greet
-      - action: utter_greet
-      - intent: thank
-      - action: utter_thank
-
   - story: order nha
     steps:
       - intent: chon_bds
       - action: action_chon_bds
+
+  - story: chon nha
+    steps:
       - intent: tt_bds
       - action: action_xacnhan_bds
+      - intent: dat
+      - action: action_xacnhan_dat
+
+  - story: giao tiep
+    steps:
+      - intent: chao
+      - action: utter_chao
+      - intent: thank
+      - action: utter_thank
 
   - story: Say goodbye anytime the user says goodbye
     steps:
-      - intent: goodbye
-      - action: utter_goodbye
+      - intent: tam_biet
+      - action: utter_tambiet
