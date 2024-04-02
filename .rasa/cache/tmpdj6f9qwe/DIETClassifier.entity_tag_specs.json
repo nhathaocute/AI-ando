@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-bds",
+      "2": "I-bds",
+      "3": "L-bds",
+      "4": "U-bds",
+      "5": "B-can_ho_e",
+      "6": "I-can_ho_e",
+      "7": "L-can_ho_e",
+      "8": "U-can_ho_e",
+      "9": "B-dat_e",
+      "10": "I-dat_e",
+      "11": "L-dat_e",
+      "12": "U-dat_e",
+      "13": "B-nha_e",
+      "14": "I-nha_e",
+      "15": "L-nha_e",
+      "16": "U-nha_e",
+      "17": "B-price",
+      "18": "I-price",
+      "19": "L-price",
+      "20": "U-price",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-bds": 1,
+      "I-bds": 2,
+      "L-bds": 3,
+      "U-bds": 4,
+      "B-can_ho_e": 5,
+      "I-can_ho_e": 6,
+      "L-can_ho_e": 7,
+      "U-can_ho_e": 8,
+      "B-dat_e": 9,
+      "I-dat_e": 10,
+      "L-dat_e": 11,
+      "U-dat_e": 12,
+      "B-nha_e": 13,
+      "I-nha_e": 14,
+      "L-nha_e": 15,
+      "U-nha_e": 16,
+      "B-price": 17,
+      "I-price": 18,
+      "L-price": 19,
+      "U-price": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "name": "property_type",
+    "pattern": "(\\bđất\\ nền\\b|\\bđất\\ chưa\\ sử\\ dụng\\b)"
+  }
+]

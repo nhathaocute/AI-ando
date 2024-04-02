@@ -38,13 +38,6 @@ nlu:
       - thanks
       - tôi đi đường giữa
 
-  - intent: chon_nha
-    examples: |
-      - tôi muốn tìm [nhà](bds)
-      - tìm thong tin [nhà](bds)
-      - nhà
-      - cửa hàng
-
   - intent: chon_bds
     examples: |
       - tôi muốn tìm bất động sản
@@ -56,14 +49,38 @@ nlu:
       - [nhà ở](bds)
       - [căn hộ](bds)
       - [cửa hàng](bds)
-      - [đất](bds)
+      - [dat nen](bds)
+      - [nha o](bds)
+      - [can ho](bds)
+      - [cua hang](bds)
+      - [đất nền](bds)
 
+  # sét điều kiện đất các mức giá tầm bao nhiêu
+  # sét trong khoảng
   - intent: dat
     examples: |
-      - [thot not](dat_e) và [500](price)
-      - Tôi muốn tìm bất động sản ở [ninh kieu](dat_e) giá dưới [500](price)
-      - Tìm kiếm nhà ở [cai rang](dat_e) với giá không quá [600](price)
-      - Tôi cần tìm căn hộ ở [o mon](dat_e) giá không vượt quá [500](price)
+      - tôi tìm [đất nền](property_type) ở [thot not](dat_e) và [500](price)
+      - tôi tìm [đất chưa sử dụng](property_type) ở [thot not](dat_e) và [500](price)
+      - [ninh kieu](dat_e) [500](price)
+      - Tìm kiếm đất ở [cai rang](dat_e) với giá không quá [600](price)
+      - Tôi cần tìm đất ở [o mon](dat_e) giá không vượt quá [500](price)
+      - đất [thốt nốt](dat_e) và [500](price)
+      - [ninh kieu](dat_e) [500](price)
+      - Tìm kiếm đất ở [cái răng]](dat_e) với giá không quá [600](price)
+      - Tôi cần tìm đất ở [ô môn](dat_e) giá không vượt quá [500](price)
+
+  - intent: nha
+    examples: |
+      - nhà [thot not](nha_e) và [500](price)
+      - [ninh kieu](nha_e) [500](price)
+      - Tìm kiếm nhà ở [cai rang](nha_e) với giá không quá [600](price)
+      - Tôi cần tìm nhà ở [o mon](nha_e) giá không vượt quá [500](price)
+  - intent: can_ho
+    examples: |
+      - căn hộ [thot not](can_ho_e) và [500](price)
+      - [ninh kieu](can_ho_e) [500](price)
+      - Tìm kiếm căn hộ ở [cai rang](can_ho_e) với giá không quá [600](price)
+      - Tôi cần tìm căn hộ ở [o mon](can_ho_e) giá không vượt quá [500](price)
 
   - intent: chao
     examples: |

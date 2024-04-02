@@ -6,12 +6,26 @@ stories:
       - intent: chon_bds
       - action: action_chon_bds
 
-  - story: chon nha
+  - story: chon dat
     steps:
       - intent: tt_bds
       - action: action_xacnhan_bds
       - intent: dat
       - action: action_xacnhan_dat
+
+  - story: chon nha
+    steps:
+      - intent: tt_bds
+      - action: action_xacnhan_bds
+      - intent: nha
+      - action: action_xacnhan_nha
+
+  - story: chon can ho
+    steps:
+      - intent: tt_bds
+      - action: action_xacnhan_bds
+      - intent: can_ho
+      - action: action_xacnhan_canho
 
   - story: giao tiep
     steps:

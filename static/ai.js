@@ -58,7 +58,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
         "<div class='avatar-wrapper avatar-small'>" +
         "<img src='static/img/hao.jpg') }}' alt='' />" +
         "</div>" +
-        "<div class='bubble bubble-light'>" +
+        "<div id='ms-right' class='bubble bubble-light'>" +
         userMessage +
         "</div>" +
         "</div>"

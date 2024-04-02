@@ -4,15 +4,19 @@ intents:
   - chao
   - tam_biet
   - thank
-  - chon_nha
   - chon_bds
   - tt_bds
   - dat
+  - nha
+  - can_ho
 
 entities:
   - bds
   - dat_e
   - price
+  - property_type
+  - nha_e
+  - can_ho_e
 
 actions:
   - utter_default_fallback
@@ -20,6 +24,8 @@ actions:
   - action_chon_bds
   - action_xacnhan_bds
   - action_xacnhan_dat
+  - action_xacnhan_nha
+  - action_xacnhan_canho
 
 responses:
   utter_thank:
@@ -31,9 +37,6 @@ responses:
 
   utter_default_spam:
     - text: "tôi không hiểu câu hỏi của bạn. Bạn có thể nói lại một cách rõ ràng hơn không?"
-
-  utter_bds:
-    - text: "hãy cho tôi biết bạn muốn chọn loại bất động sản nào?"
 
   utter_chao:
     - text: "Hey! How are you?"
@@ -53,6 +56,17 @@ slots:
     mappings:
       - type: from_entity
         entity: dat_e
+  nha_e:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: nha_e
+  can_ho_e:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: can_ho_e
+
   price:
     type: text
     mappings:
