@@ -9,6 +9,12 @@ intents:
   - dat
   - nha
   - can_ho
+  - loai_bat_dong_san
+  - vay_von
+  - quy_trinh_mua
+  - dang_chu_y
+  - noi_kinh_doanh
+  - bds_tiem_nang
 
 entities:
   - bds
@@ -17,6 +23,7 @@ entities:
   - property_type
   - nha_e
   - can_ho_e
+  - lbds
 
 actions:
   - utter_default_fallback
@@ -26,11 +33,12 @@ actions:
   - action_xacnhan_dat
   - action_xacnhan_nha
   - action_xacnhan_canho
+  - action_loai_bds
 
 responses:
   utter_thank:
-    - text: "cảm ơn bạn đã chọn đúng vị trí"
-    - text: "chỉ cần bạn có mặt thắng thua không quan trọng"
+    - text: "không có gì rất vui được hỗ trợ bạn. nếu có thắc mắc gì về bất động sản cứ liên hệ cho tôi"
+    - text: "rất vui được phục vụ mong sẽ gặp bạn lần sau."
 
   utter_default_fallback:
     - text: "Xin lỗi, tôi không hiểu câu hỏi của bạn. Bạn có thể nói lại một cách rõ ràng hơn không?"
@@ -38,9 +46,26 @@ responses:
   utter_default_spam:
     - text: "tôi không hiểu câu hỏi của bạn. Bạn có thể nói lại một cách rõ ràng hơn không?"
 
-  utter_chao:
+  utter_vayvon:
+    - text: "- Để biết thông tin về chính sách vay mua nhà ở Cần Thơ, bạn có thể liên hệ trực tiếp với các ngân hàng hoặc tổ chức tín dụng địa phương như Vietcombank, Techcombank, hoặc Sacombank. Họ sẽ cung cấp cho bạn thông tin chi tiết về các gói vay và điều kiện."
+    - text: "- Nếu bạn muốn tìm hiểu về các chính sách vay mua nhà ở Cần Thơ từ các nguồn độc lập, bạn có thể liên hệ với các chuyên gia tài chính hoặc các nhà tư vấn bất động sản địa phương. Họ có thể cung cấp cho bạn những lời khuyên chính xác và chi tiết về các gói vay."
+    - text: "- Để tìm hiểu về các điều kiện và yêu cầu cụ thể cho việc vay mua nhà ở Cần Thơ, bạn có thể trực tiếp đến các chi nhánh của ngân hàng hoặc tổ chức tín dụng địa phương gần nhất. Nhân viên tại đây sẽ hỗ trợ bạn tận tình và cung cấp thông tin đầy đủ về các gói vay hiện có."
+
+  utter_quy_trinh:
+    - text: "- Quy trình mua nhà tại Cần Thơ bao gồm các bước như tìm kiếm nhà, kiểm tra và đánh giá căn nhà, thương lượng giá, ký hợp đồng mua bán, và hoàn tất các thủ tục pháp lý. Bạn có thể bắt đầu bằng việc tìm kiếm các thông tin liên hệ với các môi giới địa phương để được hỗ trợ."
+    - text: "<li>- Bước đầu tiên bạn nên làm là xác định rõ nhu cầu và ngân sách của mình. Điều này giúp hạn chế phạm vi tìm kiếm và tập trung vào các lựa chọn phù hợp nhất với bạn.</li><li>- Sau khi đã xác định được các lựa chọn tiềm năng, bạn nên thực hiện việc kiểm tra và đánh giá kỹ lưỡng về các căn nhà bạn quan tâm. Điều này bao gồm kiểm tra về vị trí, tiện ích xung quanh, tình trạng kỹ thuật và pháp lý của căn nhà.</li>"
+
+  utter_dangchuy:
+    - text: "theo tôi những nơi đáng chú ý thì sẽ nằm ngay trung tâm thành phố Cần Thơ dưới đây là một số địa điểm để bạn có thể tham khảo: </br> Thông tin mô tảNhà mặt tiền đường Hai Bà Trưng - con đường sầm uất nhất quận Ninh Kiều, nhà ngay bến Ninh Kiều.Nhà nở hậu, thuận lợi mở kinh doanh khách sạn/tòa nhà thương mại cao tầng trọn view sông Cần Thơ.Với diện tích lớn 280m² (chưa tính hẻm cụt 24 mét vuông hưởng trọn). Tổng cộng hơn 300m².<li>Diện tích: 280 m²</li><li>Mặt tiền: 3,85 m</li><li>Số tầng: 3 tầng</li><li>Nội thất: Không nội thất</li><li>Mức gi: á86 tỷ</li><li>Pháp lý: Sổ đỏ/ Sổ hồng</li></br><a class='click-link' href='https://batdongsan.com.vn/ban-nha-mat-pho-pho-hai-ba-trung-phuong-tan-an-1/ban-dat-dien-tich-lon-ngay-ben-ninh-kieu-can-tho-pr39428321' target='_blank'>bấm vào để xem</a><img src='https://file4.batdongsan.com.vn/resize/1275x717/2024/03/27/20240327151043-d30d_wm.jpg' alt='' /><img src='https://file4.batdongsan.com.vn/resize/1275x717/2024/03/27/20240327151044-7e65_wm.jpg' alt='' />"
     - text: "Hey! How are you?"
-    - text: <p>hihi <img src='static/img/loc.jpg' alt='' /></p>
+
+  utter_kinhdoanh:
+    - text: "theo tôi những nơi kinh doanh có tiềm năng sẽ nằm ở quận Ninh Kiều vì ở đây có đông dân cư, có nhiều trường đại học, cao đẳng, ..."
+  utter_tiemnang:
+    - text: "dưới đây là một số nơi có tiềm năng: </br> ten, quan"
+
+  utter_chao:
+    - text: "chào bạn tôi có thể giúp gì cho bạn. tôi là chatbot tư vấn bất động sản ở TP.Cần Thơ rất vui được phục vụ bạn."
 
   utter_tambiet:
     - text: "Bye"

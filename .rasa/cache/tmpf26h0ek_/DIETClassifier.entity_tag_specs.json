@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-bds",
+      "2": "I-bds",
+      "3": "L-bds",
+      "4": "U-bds",
+      "5": "B-dat_e",
+      "6": "I-dat_e",
+      "7": "L-dat_e",
+      "8": "U-dat_e",
+      "9": "B-lbds",
+      "10": "I-lbds",
+      "11": "L-lbds",
+      "12": "U-lbds",
+      "13": "B-price",
+      "14": "I-price",
+      "15": "L-price",
+      "16": "U-price",
+      "17": "B-property_type",
+      "18": "I-property_type",
+      "19": "L-property_type",
+      "20": "U-property_type",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-bds": 1,
+      "I-bds": 2,
+      "L-bds": 3,
+      "U-bds": 4,
+      "B-dat_e": 5,
+      "I-dat_e": 6,
+      "L-dat_e": 7,
+      "U-dat_e": 8,
+      "B-lbds": 9,
+      "I-lbds": 10,
+      "L-lbds": 11,
+      "U-lbds": 12,
+      "B-price": 13,
+      "I-price": 14,
+      "L-price": 15,
+      "U-price": 16,
+      "B-property_type": 17,
+      "I-property_type": 18,
+      "L-property_type": 19,
+      "U-property_type": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

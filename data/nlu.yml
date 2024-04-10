@@ -57,30 +57,199 @@ nlu:
 
   # sét điều kiện đất các mức giá tầm bao nhiêu
   # sét trong khoảng
+  # phong dien hieu chu phong
   - intent: dat
     examples: |
-      - tôi tìm [đất nền](property_type) ở [thot not](dat_e) và [500](price)
-      - tôi tìm [đất chưa sử dụng](property_type) ở [thot not](dat_e) và [500](price)
-      - [ninh kieu](dat_e) [500](price)
-      - Tìm kiếm đất ở [cai rang](dat_e) với giá không quá [600](price)
-      - Tôi cần tìm đất ở [o mon](dat_e) giá không vượt quá [500](price)
-      - đất [thốt nốt](dat_e) và [500](price)
-      - [ninh kieu](dat_e) [500](price)
-      - Tìm kiếm đất ở [cái răng]](dat_e) với giá không quá [600](price)
-      - Tôi cần tìm đất ở [ô môn](dat_e) giá không vượt quá [500](price)
-
+      - tôi tìm [đất nền](property_type) ở [phong dien](dat_e) và [500 triệu](price) 
+      - tôi tìm [đất nền](property_type) ở [phong dien](dat_e) và [1tỷ](price) 
+      - tôi tìm [đất nền](property_type) ở [phong dien](dat_e) và [một tỷ](price)
+      - tôi tìm [đất nền](property_type) ở [phong dien](dat_e) và [hai tỷ](price)
+      - tôi tìm [đất nền](property_type) ở [phong dien](dat_e) và [ba tỷ](price)
+      - tôi tìm [đất nền](property_type) ở [phong dien](dat_e) và [bốn tỷ](price)
+      - tôi tìm [đất nền](property_type) ở [phong dien](dat_e) và [năm tỷ](price)
+      - tôi tìm [đất nền](property_type) ở [phong dien](dat_e) và [sáu tỷ](price)
+      - tôi tìm [đất nền](property_type) ở [phong dien](dat_e) và [bảy tỷ](price)
+      - tôi tìm [đất nền](property_type) ở [phong dien](dat_e) và [tám tỷ](price)
+      - tôi tìm [đất nền](property_type) ở [phong dien](dat_e) và [chín tỷ](price) 
+      - tôi tìm [đất chưa sử dụng](property_type) ở [phong dien](dat_e) và [500 triệu](price) 
+      - tôi tìm [đất nền](property_type) ở [ninh kieu](dat_e) và [500 triệu](price) 
+      - tôi tìm [đất nền](property_type) ở [ninh kieu](dat_e) và [1tỷ](price) 
+      - tôi tìm [đất chưa sử dụng](property_type) ở [ninh kieu](dat_e) và [500 triệu](price) 
+      - tôi tìm [đất chưa sử dụng](property_type) ở [ninh kieu](dat_e) và [1tỷ](price) 
+      - tôi tìm [đất nền](property_type) ở [cai rang](dat_e) và [500 triệu](price) 
+      - tôi tìm [đất nền](property_type) ở [cai rang](dat_e) và [1tỷ](price) 
+      - tôi tìm [đất chưa sử dụng](property_type) ở [cai rang](dat_e) và [500 triệu](price) 
+      - tôi tìm [đất chưa sử dụng](property_type) ở [cai rang](dat_e) và [1tỷ](price) 
+      - tôi tìm [đất nền](property_type) ở [binh thuy](dat_e) và [500 triệu](price) 
+      - tôi tìm [đất nền](property_type) ở [binh thuy](dat_e) và [1tỷ](price) 
+      - tôi tìm [đất chưa sử dụng](property_type) ở [binh thuy](dat_e) và [500 triệu](price) 
+      - tôi tìm [đất chưa sử dụng](property_type) ở [binh thuy](dat_e) và [1tỷ](price)
+      - tôi tìm [dat nen](property_type) ở [phong điền](dat_e) và [500 triệu](price) 
+      - tôi tìm [dat nen](property_type) ở [phong điền](dat_e) và [1tỷ](price) 
+      - tôi tìm [dat nen](property_type) ở [phong điền](dat_e) và [một tỷ](price)
+      - tôi tìm [dat nen](property_type) ở [phong điền](dat_e) và [hai tỷ](price)
+      - tôi tìm [dat nen](property_type) ở [phong điền](dat_e) và [ba tỷ](price)
+      - tôi tìm [dat nen](property_type) ở [phong điền](dat_e) và [bốn tỷ](price)
+      - tôi tìm [dat nen](property_type) ở [phong điền](dat_e) và [năm tỷ](price)
+      - tôi tìm [dat nen](property_type) ở [phong điền](dat_e) và [sáu tỷ](price)
+      - tôi tìm [dat nen](property_type) ở [phong điền](dat_e) và [bảy tỷ](price)
+      - tôi tìm [dat nen](property_type) ở [phong điền](dat_e) và [tám tỷ](price)
+      - tôi tìm [dat nen](property_type) ở [phong điền](dat_e) và [chín tỷ](price) 
+      - tôi tìm [dat chua su dung](property_type) ở [phong điền](dat_e) và [500 triệu](price) 
+      - tôi tìm [dat nen](property_type) ở [ninh kiều](dat_e) và [500 triệu](price) 
+      - tôi tìm [dat nen](property_type) ở [ninh kiều](dat_e) và [1tỷ](price) 
+      - tôi tìm [dat chua su dung](property_type) ở [ninh kiều](dat_e) và [500 triệu](price) 
+      - tôi tìm [dat chua su dung](property_type) ở [ninh kiều](dat_e) và [1tỷ](price) 
+      - tôi tìm [dat nen](property_type) ở [cái răng](dat_e) và [500 triệu](price) 
+      - tôi tìm [dat nen](property_type) ở [cái răng](dat_e) và [1tỷ](price) 
+      - tôi tìm [dat chua su dung](property_type) ở [cái răng](dat_e) và [500 triệu](price) 
+      - tôi tìm [dat chua su dung](property_type) ở [cái răng](dat_e) và [1tỷ](price) 
+      - tôi tìm [dat nen](property_type) ở [bình thủy](dat_e) và [500 triệu](price) 
+      - tôi tìm [dat nen](property_type) ở [bình thủy](dat_e) và [1tỷ](price) 
+      - tôi tìm [dat chua su dung](property_type) ở [bình thủy](dat_e) và [500 triệu](price) 
+      - tôi tìm [dat chua su dung](property_type) ở [bình thủy](dat_e) và [1tỷ](price)
   - intent: nha
     examples: |
-      - nhà [thot not](nha_e) và [500](price)
-      - [ninh kieu](nha_e) [500](price)
-      - Tìm kiếm nhà ở [cai rang](nha_e) với giá không quá [600](price)
-      - Tôi cần tìm nhà ở [o mon](nha_e) giá không vượt quá [500](price)
+      - tôi tìm [nhà phố](property_type) ở [phong điền](dat_e) và [500 triệu](price) 
+      - tôi tìm [nhà phố](property_type) ở [phong điền](dat_e) và [1tỷ](price) 
+      - tôi tìm [nhà phố](property_type) ở [phong điền](dat_e) và [một tỷ](price)
+      - tôi tìm [nhà phố](property_type) ở [phong điền](dat_e) và [hai tỷ](price)
+      - tôi tìm [nhà phố](property_type) ở [phong điền](dat_e) và [ba tỷ](price)
+      - tôi tìm [nhà phố](property_type) ở [phong điền](dat_e) và [bốn tỷ](price)
+      - tôi tìm [nhà phố](property_type) ở [phong điền](dat_e) và [năm tỷ](price)
+      - tôi tìm [nhà phố](property_type) ở [phong điền](dat_e) và [sáu tỷ](price)
+      - tôi tìm [nhà phố](property_type) ở [phong điền](dat_e) và [bảy tỷ](price)
+      - tôi tìm [nhà phố](property_type) ở [phong điền](dat_e) và [tám tỷ](price)
+      - tôi tìm [nhà phố](property_type) ở [phong điền](dat_e) và [chín tỷ](price) 
+      - tôi tìm [nhà gia đình](property_type) ở [phong điền](dat_e) và [500 triệu](price) 
+      - tôi tìm [nhà gia đình](property_type) ở [phong điền](dat_e) và [1tỷ](price) 
+      - tôi tìm [nhà phố](property_type) ở [ninh kiều](dat_e) và [500 triệu](price) 
+      - tôi tìm [nhà phố](property_type) ở [ninh kiều](dat_e) và [1tỷ](price) 
+      - tôi tìm [nhà gia đình](property_type) ở [ninh kiều](dat_e) và [500 triệu](price) 
+      - tôi tìm [nhà gia đình](property_type) ở [ninh kiều](dat_e) và [1tỷ](price) 
+      - tôi tìm [nhà phố](property_type) ở [cái răng](dat_e) và [500 triệu](price) 
+      - tôi tìm [nhà phố](property_type) ở [cái răng](dat_e) và [1tỷ](price) 
+      - tôi tìm [nhà gia đình](property_type) ở [cái răng](dat_e) và [500 triệu](price) 
+      - tôi tìm [nhà gia đình](property_type) ở [cái răng](dat_e) và [1tỷ](price) 
+      - tôi tìm [nhà phố](property_type) ở [bình thủy](dat_e) và [500 triệu](price) 
+      - tôi tìm [nhà phố](property_type) ở [bình thủy](dat_e) và [1tỷ](price) 
+      - tôi tìm [nhà gia đình](property_type) ở [bình thủy](dat_e) và [500 triệu](price) 
+      - tôi tìm [nhà gia đình](property_type) ở [bình thủy](dat_e) và [1tỷ](price)
+      - tôi tìm [nha pho](property_type) ở [phong dien](dat_e) và [500 triệu](price) 
+      - tôi tìm [nha pho](property_type) ở [phong dien](dat_e) và [1tỷ](price) 
+      - tôi tìm [nha pho](property_type) ở [phong dien](dat_e) và [một tỷ](price)
+      - tôi tìm [nha pho](property_type) ở [phong dien](dat_e) và [hai tỷ](price)
+      - tôi tìm [nha pho](property_type) ở [phong dien](dat_e) và [ba tỷ](price)
+      - tôi tìm [nha pho](property_type) ở [phong dien](dat_e) và [bốn tỷ](price)
+      - tôi tìm [nha pho](property_type) ở [phong dien](dat_e) và [năm tỷ](price)
+      - tôi tìm [nha pho](property_type) ở [phong dien](dat_e) và [sáu tỷ](price)
+      - tôi tìm [nha pho](property_type) ở [phong dien](dat_e) và [bảy tỷ](price)
+      - tôi tìm [nha pho](property_type) ở [phong dien](dat_e) và [tám tỷ](price)
+      - tôi tìm [nha pho](property_type) ở [phong dien](dat_e) và [chín tỷ](price) 
+      - tôi tìm [nha gia dinh](property_type) ở [phong dien](dat_e) và [500 triệu](price) 
+      - tôi tìm [nha gia dinh](property_type) ở [phong dien](dat_e) và [1tỷ](price) 
+      - tôi tìm [nha pho](property_type) ở [ninh kieu](dat_e) và [500 triệu](price) 
+      - tôi tìm [nha pho](property_type) ở [ninh kieu](dat_e) và [1tỷ](price) 
+      - tôi tìm [nha gia dinh](property_type) ở [ninh kieu](dat_e) và [500 triệu](price) 
+      - tôi tìm [nha gia dinh](property_type) ở [ninh kieu](dat_e) và [1tỷ](price) 
+      - tôi tìm [nha pho](property_type) ở [cai rang](dat_e) và [500 triệu](price) 
+      - tôi tìm [nha pho](property_type) ở [cai rang](dat_e) và [1tỷ](price) 
+      - tôi tìm [nha gia dinh](property_type) ở [cai rang](dat_e) và [500 triệu](price) 
+      - tôi tìm [nha gia dinh](property_type) ở [cai rang](dat_e) và [1tỷ](price) 
+      - tôi tìm [nha pho](property_type) ở [binh thuy](dat_e) và [500 triệu](price) 
+      - tôi tìm [nha pho](property_type) ở [binh thuy](dat_e) và [1tỷ](price) 
+      - tôi tìm [nha gia dinh](property_type) ở [binh thuy](dat_e) và [500 triệu](price) 
+      - tôi tìm [nha gia dinh](property_type) ở [binh thuy](dat_e) và [1tỷ](price)
   - intent: can_ho
     examples: |
-      - căn hộ [thot not](can_ho_e) và [500](price)
-      - [ninh kieu](can_ho_e) [500](price)
-      - Tìm kiếm căn hộ ở [cai rang](can_ho_e) với giá không quá [600](price)
-      - Tôi cần tìm căn hộ ở [o mon](can_ho_e) giá không vượt quá [500](price)
+      - tôi tìm [căn hộ chung cư](property_type) ở [phong dien](dat_e) và [500 triệu](price) 
+      - tôi tìm [căn hộ chung cư](property_type) ở [phong dien](dat_e) và [1tỷ](price) 
+      - tôi tìm [căn hộ chung cư](property_type) ở [phong dien](dat_e) và [một tỷ](price)
+      - tôi tìm [căn hộ chung cư](property_type) ở [phong dien](dat_e) và [hai tỷ](price)
+      - tôi tìm [căn hộ chung cư](property_type) ở [phong dien](dat_e) và [ba tỷ](price)
+      - tôi tìm [căn hộ chung cư](property_type) ở [phong dien](dat_e) và [bốn tỷ](price)
+      - tôi tìm [căn hộ chung cư](property_type) ở [phong dien](dat_e) và [năm tỷ](price)
+      - tôi tìm [căn hộ chung cư](property_type) ở [phong dien](dat_e) và [sáu tỷ](price)
+      - tôi tìm [căn hộ chung cư](property_type) ở [phong dien](dat_e) và [bảy tỷ](price)
+      - tôi tìm [căn hộ chung cư](property_type) ở [phong dien](dat_e) và [tám tỷ](price)
+      - tôi tìm [căn hộ chung cư](property_type) ở [phong dien](dat_e) và [chín tỷ](price) 
+      - tôi tìm [căn hộ dịch vụ](property_type) ở [phong dien](dat_e) và [500 triệu](price) 
+      - tôi tìm [căn hộ dịch vụ](property_type) ở [phong dien](dat_e) và [1tỷ](price) 
+      - tôi tìm [căn hộ chung cư](property_type) ở [ninh kieu](dat_e) và [500 triệu](price) 
+      - tôi tìm [căn hộ chung cư](property_type) ở [ninh kieu](dat_e) và [1tỷ](price) 
+      - tôi tìm [căn hộ dịch vụ](property_type) ở [ninh kieu](dat_e) và [500 triệu](price) 
+      - tôi tìm [căn hộ dịch vụ](property_type) ở [ninh kieu](dat_e) và [1tỷ](price) 
+      - tôi tìm [căn hộ chung cư](property_type) ở [cai rang](dat_e) và [500 triệu](price) 
+      - tôi tìm [căn hộ chung cư](property_type) ở [cai rang](dat_e) và [1tỷ](price) 
+      - tôi tìm [căn hộ dịch vụ](property_type) ở [cai rang](dat_e) và [500 triệu](price) 
+      - tôi tìm [căn hộ dịch vụ](property_type) ở [cai rang](dat_e) và [1tỷ](price) 
+      - tôi tìm [căn hộ chung cư](property_type) ở [binh thuy](dat_e) và [500 triệu](price) 
+      - tôi tìm [căn hộ chung cư](property_type) ở [binh thuy](dat_e) và [1tỷ](price) 
+      - tôi tìm [căn hộ dịch vụ](property_type) ở [binh thuy](dat_e) và [500 triệu](price) 
+      - tôi tìm [căn hộ dịch vụ](property_type) ở [binh thuy](dat_e) và [1tỷ](price)
+      - tôi tìm [can ho chung cu](property_type) ở [phong điền](dat_e) và [500 triệu](price) 
+      - tôi tìm [can ho chung cu](property_type) ở [phong điền](dat_e) và [1tỷ](price) 
+      - tôi tìm [can ho chung cu](property_type) ở [phong điền](dat_e) và [một tỷ](price)
+      - tôi tìm [can ho chung cu](property_type) ở [phong điền](dat_e) và [hai tỷ](price)
+      - tôi tìm [can ho chung cu](property_type) ở [phong điền](dat_e) và [ba tỷ](price)
+      - tôi tìm [can ho chung cu](property_type) ở [phong điền](dat_e) và [bốn tỷ](price)
+      - tôi tìm [can ho chung cu](property_type) ở [phong điền](dat_e) và [năm tỷ](price)
+      - tôi tìm [can ho chung cu](property_type) ở [phong điền](dat_e) và [sáu tỷ](price)
+      - tôi tìm [can ho chung cu](property_type) ở [phong điền](dat_e) và [bảy tỷ](price)
+      - tôi tìm [can ho chung cu](property_type) ở [phong điền](dat_e) và [tám tỷ](price)
+      - tôi tìm [can ho chung cu](property_type) ở [phong điền](dat_e) và [chín tỷ](price) 
+      - tôi tìm [can ho dich vu](property_type) ở [phong điền](dat_e) và [500 triệu](price) 
+      - tôi tìm [can ho dich vu](property_type) ở [phong điền](dat_e) và [1tỷ](price) 
+      - tôi tìm [can ho chung cu](property_type) ở [ninh kiều](dat_e) và [500 triệu](price) 
+      - tôi tìm [can ho chung cu](property_type) ở [ninh kiều](dat_e) và [1tỷ](price) 
+      - tôi tìm [can ho dich vu](property_type) ở [ninh kiều](dat_e) và [500 triệu](price) 
+      - tôi tìm [can ho dich vu](property_type) ở [ninh kiều](dat_e) và [1tỷ](price) 
+      - tôi tìm [can ho chung cu](property_type) ở [cái răng](dat_e) và [500 triệu](price) 
+      - tôi tìm [can ho chung cu](property_type) ở [cái răng](dat_e) và [1tỷ](price) 
+      - tôi tìm [can ho dich vu](property_type) ở [cái răng](dat_e) và [500 triệu](price) 
+      - tôi tìm [can ho dich vu](property_type) ở [cái răng](dat_e) và [1tỷ](price) 
+      - tôi tìm [can ho chung cu](property_type) ở [bình thủy](dat_e) và [500 triệu](price) 
+      - tôi tìm [can ho chung cu](property_type) ở [bình thủy](dat_e) và [1tỷ](price) 
+      - tôi tìm [can ho dich vu](property_type) ở [bình thủy](dat_e) và [500 triệu](price) 
+      - tôi tìm [can ho dich vu](property_type) ở [bình thủy](dat_e) và [1tỷ](price)
+  - intent: loai_bat_dong_san
+    examples: |
+      - [đất nền](lbds) là gì?
+      - [đất chưa sử dụng](lbds) là gì?
+      - [nhà phố](lbds) là gì?
+      - [nhà gia đình](lbds) là gì?
+      - [căn hộ chung cư](lbds) là gì?
+      - [căn hộ dịch vụ](lbds) là gì?
+      - [dat nen](lbds) la gi?
+      - [dat chua su dung](lbds) la gi?
+      - [nha pho](lbds) la gi?
+      - [nha gia dinh](lbds) la gi?
+      - [can ho chung cu](lbds) la gi?
+      - [can ho dich vu](lbds) la gi?
+
+  - intent: vay_von
+    examples: |
+      - tôi muốn vay vốn
+      - tìm hiểu chính sách vay vốn
+      - tìm điều kiện vay vốn
+  - intent: quy_trinh_mua
+    examples: |
+      - quy trình mua bất động sản
+      - các bước quy trình mua bất động sản
+
+  - intent: dang_chu_y
+    examples: |
+      - bạn có thể cho tôi thông tin các bất động sản đáng chú ý tại cần thơ không
+      - gợi ý các bất động sản nổi bật tại cần thơ
+
+  - intent: noi_kinh_doanh
+    examples: |
+      - gợi ý nơi có thể kinh doanh
+      - gợi ý các bất động sản có thể kinh doanh
+  - intent: bds_tiem_nang
+    examples: |
+      - tìm cho tôi các bất động sản tiềm năng
+      - gợi ý các bất động sản tiềm năng phát triển tại cần thơ
 
   - intent: chao
     examples: |

@@ -59,8 +59,8 @@ img {
     border-radius: 20px 20px 0 0;
     padding: 15px;
     .avatar-big {
-      width: 35px;
-      height: 35px;
+      width: 45px;
+      height: 45px;
     }
     .name {
       margin-left: 20px;
@@ -81,8 +81,8 @@ img {
     height: 200px;
     overflow-y: auto;
     .avatar-small {
-      width: 25px;
-      height: 25px;
+      width: 35px;
+      height: 35px;
     }
     .message {
       margin-bottom: 15px;
