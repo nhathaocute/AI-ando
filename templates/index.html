@@ -16,95 +16,57 @@
     <title>Chatbot BDS</title>
     <style>
       /* Styles for demonstration purpose, you can customize these as needed */
-      .emoji-box {
-        display: none;
-        position: absolute;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 5px;
-      }
-
-      .emoji-box span {
-        cursor: pointer;
-        margin-right: 5px;
-      }
-
-      .emoji-box span:hover {
-        background-color: #f0f0f0;
-      }
-
-      /* @media only screen and (max-width: 575px) {
-        .chat-box {
-          width: 300px;
-        }
-      }
-
-      @media only screen and (min-width: 576px) and (max-width: 767px) {
-      }
-
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
-      }
-
-      @media only screen and (min-width: 992px) and (max-width: 1199px) {
-      }
-      @media only screen and (min-width: 1200px) {
-        .chat-box {
-          width: 1000px;
-        }
-        .chat-room {
-          height: 50vh;
-        }
-      } */
     </style>
   </head>
   <body>
-    <div class="chat-box">
-      <div class="header">
-        <div class="avatar-wrapper avatar-big">
-          <img src="{{ url_for('static', filename='img/loc.jpg') }}" alt="" />
-        </div>
-        <span class="name">ChatBot</span>
-        <span class="options">
-          <i class="fas fa-ellipsis-h"></i>
-        </span>
-      </div>
-      <div class="chat-room" id="chat-widget-messages"></div>
-      <div class="type-area">
-        <div class="input-wrapper">
-          <input
-            class="inputText"
-            type="text"
-            id="inputText"
-            placeholder="Type messages here..."
-          />
-        </div>
-        <span class="button-add" id="buttonAdd">
-          <i class="fas fa-plus-circle"></i>
-          <div class="others" id="others">
-            <span class="emoji-button">
-              <i class="far fa-laugh"></i>
-              <div class="emoji-box">
-                <span onclick="selectEmoji('&#x1f604;')">&#x1f604;</span>
-                <span onclick="selectEmoji('😀')">😀</span>
-                <span onclick="selectEmoji('😂')">😂</span>
-                <span onclick="selectEmoji('😭')">😭</span>
-                <span onclick="selectEmoji('😍')">😍</span>
-                <span onclick="selectEmoji('🤮')">🤮</span>
-                <span onclick="selectEmoji('🤑')">🤑</span>
-                <span onclick="selectEmoji('😖')">😖</span>
-                <span onclick="selectEmoji('😷')">😷</span>
-              </div>
-            </span>
-            <span class="image-button">
-              <i class="far fa-image"></i>
-            </span>
-            <span>
-              <i class="fas fa-paperclip"></i>
-            </span>
+    <div class="chatbox-bao">
+      <div class="chat-box">
+        <div class="header">
+          <div class="avatar-wrapper avatar-big">
+            <img src="{{ url_for('static', filename='img/loc.jpg') }}" alt="" />
           </div>
-        </span>
-        <button class="button-send">Send</button>
+          <span class="name">ChatBot</span>
+          <span class="options">
+            <i class="fas fa-ellipsis-h"></i>
+          </span>
+        </div>
+        <div class="chat-room" id="chat-widget-messages"></div>
+        <div class="type-area">
+          <div class="input-wrapper">
+            <input
+              class="inputText"
+              type="text"
+              id="inputText"
+              placeholder="Type messages here..."
+            />
+          </div>
+          <span class="button-add" id="buttonAdd">
+            <i class="fas fa-plus-circle"></i>
+            <div class="others" id="others">
+              <span class="emoji-button">
+                <i class="far fa-laugh"></i>
+                <div class="emoji-box">
+                  <span onclick="selectEmoji('&#x1f604;')">&#x1f604;</span>
+                  <span onclick="selectEmoji('😀')">😀</span>
+                  <span onclick="selectEmoji('😂')">😂</span>
+                  <span onclick="selectEmoji('😭')">😭</span>
+                  <span onclick="selectEmoji('😍')">😍</span>
+                  <span onclick="selectEmoji('🤮')">🤮</span>
+                  <span onclick="selectEmoji('🤑')">🤑</span>
+                  <span onclick="selectEmoji('😖')">😖</span>
+                  <span onclick="selectEmoji('😷')">😷</span>
+                </div>
+              </span>
+              <span class="image-button">
+                <i class="far fa-image"></i>
+              </span>
+              <span>
+                <i class="fas fa-paperclip"></i>
+              </span>
+            </div>
+          </span>
+          <button class="button-send">Send</button>
+        </div>
       </div>
     </div>
     <script>

@@ -1,0 +1,110 @@
+version: "2.0"
+
+nlu:
+  - intent: chua_ro
+    examples: |
+      - tôi không hiểu nó là gì
+      - bạn có thể giải thích thêm không?
+      - tôi cần thông tin chi tiết hơn
+      - không hiểu
+  - intent: spam
+    examples: |
+      - 23r2ef2f
+      - weonvoe
+      - woefwjvnrovn
+      - vweovnoerjvn
+
+  - intent: chua_ro
+    examples: |
+      - Tôi không hiểu.
+      - Bạn có thể giải thích rõ hơn không?
+      - Có thể nói lại được không?
+  - intent: spam
+    examples: |
+      - roiuervn;rwvlm
+      - iojwevepnrov
+      - vowievonl
+  - intent: thank
+    examples: |
+      - Cảm ơn.
+      - Thanks.
+      - Hihihi.
+  - intent: duong_bat_dong_san
+    examples: |
+      - Tìm cho tôi bất động sản gần đường Nguyễn Văn Cừ.
+      - Tôi muốn tìm bất động sản ở đường Mậu Thân.
+  - intent: chon_bds
+    examples: |
+      - Tôi muốn tìm thông tin về bất động sản.
+      - Tôi cần xem thông tin về bất động sản.
+  - intent: tt_bds
+    examples: |
+      - Tìm kiếm căn hộ.
+      - Tôi muốn biết về đất nền.
+  - intent: gia_dat
+    examples: |
+      - Giá đất ở quận Ninh Kiều là bao nhiêu?
+      - Cho tôi biết giá đất ở quận Bình Thủy.
+  - intent: dat
+    examples: |
+      - Tìm cho tôi đất nền ở Phong Điền và khoảng giá 500 triệu.
+      - Tôi muốn tìm đất ở Cái Răng với giá khoảng 1 tỷ.
+  - intent: nha
+    examples: |
+      - Tôi muốn tìm nhà phố ở quận Ninh Kiều và giá khoảng 500 triệu.
+      - Tìm nhà gia đình ở quận Phong Điền với giá khoảng 1 tỷ.
+  - intent: can_ho
+    examples: |
+      - Tìm căn hộ chung cư ở quận Cái Răng và giá khoảng 700 triệu.
+      - Tôi muốn tìm căn hộ dịch vụ ở quận Bình Thủy với giá khoảng 2 tỷ.
+
+  - intent: loai_bat_dong_san
+    examples: |
+      - Đất nền là gì?
+      - Nhà phố là gì?
+      - Căn hộ chung cư là gì?
+      - Đất mặt tiền là gì?
+  - intent: vay_von
+    examples: |
+      - Tôi muốn biết về việc vay vốn.
+      - Tìm hiểu về chính sách vay vốn.
+  - intent: quy_trinh_mua
+    examples: |
+      - Có thể cho tôi biết về quy trình mua bất động sản không?
+      - Những bước cần thiết trong quy trình mua nhà là gì?
+  - intent: dang_chu_y
+    examples: |
+      - Có bất động sản nào đáng chú ý tại Cần Thơ không?
+      - Gợi ý các bất động sản nổi bật tại địa phương này.
+  - intent: noi_kinh_doanh
+    examples: |
+      - Bạn có thể gợi ý nơi nào có thể kinh doanh không?
+      - Tôi quan tâm đến việc kinh doanh, bạn có thể giúp được không?
+  - intent: bds_tiem_nang
+    examples: |
+      - Tìm cho tôi các bất động sản tiềm năng ở đây.
+      - Gợi ý các bất động sản tiềm năng phát triển tại Cần Thơ.
+  - intent: bds_giayto_phaply
+    examples: |
+      - Thông tin về giấy tờ pháp lý của các loại đất là gì?
+      - Các bất động sản đã có ai đứng chủ quyền chưa?
+  - intent: bds_chuaduvon
+    examples: |
+      - Tôi muốn mua bất động sản nhưng chưa đủ vốn, có thể trả góp được không?
+      - Chưa đủ vốn có thể mua nhà trả góp không?
+  - intent: chao
+    examples: |
+      - Xin chào!
+      - Chào bạn.
+  - intent: tam_biet
+    examples: |
+      - Tạm biệt!
+      - Goodbye!
+  - intent: hoi_cau_hoi
+    examples: |
+      - Bạn có thể giải đáp một câu hỏi cho tôi không?
+      - Tôi muốn hỏi một điều.
+  - intent: phan_nan
+    examples: |
+      - Tôi không hài lòng về dịch vụ của bạn.
+      - Có một số vấn đề cần được cải thiện.

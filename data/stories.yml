@@ -6,6 +6,16 @@ stories:
       - intent: chon_bds
       - action: action_chon_bds
 
+  - story: gia dat
+    steps:
+      - intent: gia_dat
+      - action: action_xacnhan_giadat
+
+  - story: gan duong
+    steps:
+      - intent: duong_bat_dong_san
+      - action: action_duong_bds
+
   - story: chon dat
     steps:
       - intent: tt_bds
@@ -37,6 +47,15 @@ stories:
       - intent: vay_von
       - action: utter_vayvon
 
+  - story: giay to
+    steps:
+      - intent: bds_giayto_phaply
+      - action: utter_giayto
+  - story: chua du von
+    steps:
+      - intent: bds_chuaduvon
+      - action: utter_chuaduvon
+
   - story: quy trinh mua bds
     steps:
       - intent: quy_trinh_mua
@@ -53,7 +72,12 @@ stories:
     steps:
       - intent: noi_kinh_doanh
       - action: utter_kinhdoanh
-
+  - story: khach hang
+    steps:
+      - intent: phan_nan
+      - action: utter_phannan
+      - intent: hoi_cau_hoi
+      - action: utter_hoicauhoi
   - story: Say goodbye anytime the user says goodbye
     steps:
       - intent: tam_biet

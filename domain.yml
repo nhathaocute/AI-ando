@@ -15,15 +15,25 @@ intents:
   - dang_chu_y
   - noi_kinh_doanh
   - bds_tiem_nang
+  - gia_dat
+  - duong_bat_dong_san
+  - bds_giayto_phaply
+  - bds_chuaduvon
+  - phan_nan
+  - hoi_cau_hoi
 
 entities:
   - bds
   - dat_e
   - price
   - property_type
+  - property_type_nha
+  - property_type_canho
   - nha_e
   - can_ho_e
   - lbds
+  - giadat
+  - dia_diem
 
 actions:
   - utter_default_fallback
@@ -34,6 +44,8 @@ actions:
   - action_xacnhan_nha
   - action_xacnhan_canho
   - action_loai_bds
+  - action_xacnhan_giadat
+  - action_duong_bds
 
 responses:
   utter_thank:
@@ -57,12 +69,19 @@ responses:
 
   utter_dangchuy:
     - text: "theo tôi những nơi đáng chú ý thì sẽ nằm ngay trung tâm thành phố Cần Thơ dưới đây là một số địa điểm để bạn có thể tham khảo: </br> Thông tin mô tảNhà mặt tiền đường Hai Bà Trưng - con đường sầm uất nhất quận Ninh Kiều, nhà ngay bến Ninh Kiều.Nhà nở hậu, thuận lợi mở kinh doanh khách sạn/tòa nhà thương mại cao tầng trọn view sông Cần Thơ.Với diện tích lớn 280m² (chưa tính hẻm cụt 24 mét vuông hưởng trọn). Tổng cộng hơn 300m².<li>Diện tích: 280 m²</li><li>Mặt tiền: 3,85 m</li><li>Số tầng: 3 tầng</li><li>Nội thất: Không nội thất</li><li>Mức gi: á86 tỷ</li><li>Pháp lý: Sổ đỏ/ Sổ hồng</li></br><a class='click-link' href='https://batdongsan.com.vn/ban-nha-mat-pho-pho-hai-ba-trung-phuong-tan-an-1/ban-dat-dien-tich-lon-ngay-ben-ninh-kieu-can-tho-pr39428321' target='_blank'>bấm vào để xem</a><img src='https://file4.batdongsan.com.vn/resize/1275x717/2024/03/27/20240327151043-d30d_wm.jpg' alt='' /><img src='https://file4.batdongsan.com.vn/resize/1275x717/2024/03/27/20240327151044-7e65_wm.jpg' alt='' />"
-    - text: "Hey! How are you?"
 
   utter_kinhdoanh:
     - text: "theo tôi những nơi kinh doanh có tiềm năng sẽ nằm ở quận Ninh Kiều vì ở đây có đông dân cư, có nhiều trường đại học, cao đẳng, ..."
   utter_tiemnang:
     - text: "dưới đây là một số nơi có tiềm năng: </br> ten, quan"
+  utter_giayto:
+    - text: "tất nhiên các bất động sản tôi đưa ra đều có đầy đủ giấy tờ và hợp pháp, thủ tục thanh toán bạn có thể liên hệ với chủ nhân của nó."
+  utter_chuaduvon:
+    - text: "tất nhiên bạn có thể liên hệ với chủ bất động sản để thương lượng trả góp hoặc bạn có thể vay vốn ở những nơi đáng tin cậy để có thể mua được bất động sản bạn thích."
+  utter_hoicauhoi:
+    - text: "tất nhiên bạn có câu hỏi nào liên quan đến bất động sản ở cần thơ tôi sẽ giải đáp cho bạn"
+  utter_phannan:
+    - text: "cảm ơn bạn đã góp ý tôi sẽ cố gắn cải thiện hơn để có thể phục vụ một cách tốt hơn nữa."
 
   utter_chao:
     - text: "chào bạn tôi có thể giúp gì cho bạn. tôi là chatbot tư vấn bất động sản ở TP.Cần Thơ rất vui được phục vụ bạn."
@@ -76,6 +95,11 @@ slots:
     mappings:
       - type: from_entity
         entity: bds
+  giadat:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: giadat
   dat_e:
     type: text
     mappings:

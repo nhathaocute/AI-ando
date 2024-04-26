@@ -1,0 +1,98 @@
+{
+  "dia_diem": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 52,
+    "confused_with": {}
+  },
+  "giadat": {
+    "precision": 0.96,
+    "recall": 1.0,
+    "f1-score": 0.9795918367346939,
+    "support": 24,
+    "confused_with": {}
+  },
+  "price": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 332,
+    "confused_with": {}
+  },
+  "nha_e": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 100,
+    "confused_with": {}
+  },
+  "can_ho_e": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 100,
+    "confused_with": {}
+  },
+  "dat_e": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 192,
+    "confused_with": {}
+  },
+  "property_type_canho": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 200,
+    "confused_with": {}
+  },
+  "lbds": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 36,
+    "confused_with": {}
+  },
+  "property_type": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 220,
+    "confused_with": {}
+  },
+  "property_type_nha": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 116,
+    "confused_with": {}
+  },
+  "bds": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 12,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9992779783393502,
+    "recall": 1.0,
+    "f1-score": 0.9996388587937883,
+    "support": 1384
+  },
+  "macro avg": {
+    "precision": 0.9963636363636365,
+    "recall": 1.0,
+    "f1-score": 0.9981447124304268,
+    "support": 1384
+  },
+  "weighted avg": {
+    "precision": 0.9993063583815028,
+    "recall": 1.0,
+    "f1-score": 0.9996461012150526,
+    "support": 1384
+  },
+  "accuracy": 0.9996665555185061
+}
